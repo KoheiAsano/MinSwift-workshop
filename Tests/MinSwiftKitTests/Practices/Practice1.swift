@@ -48,7 +48,7 @@ func sayHello() {
 
         XCTAssertEqual(parser.read().tokenKind, .leftParen) // eat sayHello
         XCTAssertEqual(parser.currentToken.tokenKind, .leftParen)
-
+        
         // skip the rest
     }
 

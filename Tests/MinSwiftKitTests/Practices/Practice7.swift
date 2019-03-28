@@ -19,7 +19,6 @@ final class Practice7: ParserTestCase {
         let comparison = node as! BinaryExpressionNode
         XCTAssertTrue(comparison.lhs is VariableNode)
         XCTAssertTrue(comparison.rhs is BinaryExpressionNode)
-
         let rhsNode = comparison.rhs as! BinaryExpressionNode
         XCTAssertTrue(rhsNode.lhs is VariableNode)
         XCTAssertTrue(rhsNode.rhs is NumberNode)

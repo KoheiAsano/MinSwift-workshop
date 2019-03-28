@@ -7,7 +7,6 @@ class Practice2: ParserTestCase {
     // 2-1
     func testParseInteger() {
         load("42") // integerLiteral("42")
-
         let node = parser.parseNumber()
         XCTAssertTrue(node is NumberNode)
         let numberNode = node as! NumberNode

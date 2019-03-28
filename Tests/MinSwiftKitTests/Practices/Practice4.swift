@@ -89,7 +89,7 @@ func calculate(a: Double, b: Double) -> Double {
     }
 
     // If you have a rest time, try them.
-    func _testParsingArgumentWithLabel() {
+    func testParsingArgumentWithLabel() {
         load("label a: Double")
 
         let argument = parser.parseFunctionDefinitionArgument()
@@ -97,7 +97,7 @@ func calculate(a: Double, b: Double) -> Double {
         XCTAssertEqual(argument.variableName, "a")
     }
 
-    func _testParsingArgumentWithWildcard() {
+    func testParsingArgumentWithWildcard() {
         load("_ a: Double")
 
         let argument = parser.parseFunctionDefinitionArgument()
